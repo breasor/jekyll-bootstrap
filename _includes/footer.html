@@ -1,0 +1,81 @@
+<footer class="site-footer">
+  <div class="container container-content">
+    <div class="row container-content">
+
+      <div class="col-xs-6 col-md-3">
+        <ul class="list-unstyled">
+          {% for node in site.header-links %}
+          {% if page.title == node.title %}
+          <li class="active"><a class="nav-item" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% else %}
+          <li><a class="nav-item" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="item">
+          <a href="http://www.homeadvisor.com/biz/securityconsultinc?m=sealofapproval&entry_point_id=5761960"><img class="hafooter image-responsive"  src="{{"/images/screened.png"  | prepend: site.baseurl }}"></a>
+          <span class="caption hafooter">Powered by: <a href="http://www.homeadvisor.com/">HomeAdvisor</span>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="item" >
+            <a href="http://www.homeadvisor.com/biz/securityconsultinc/"><img class="hafooter image-responsive" src="{{"/images/ha2014_112.png"  | prepend: site.baseurl }}"></a>
+            <a href="http://www.homeadvisor.com/bestofaward/"><span class="caption hafooter">What is this award?</a></span>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+        <ul class="list-unstyled">
+          {% for node in site.footer-links %}
+          {% if page.title == node.title %}
+          <li class="active"><a class="nav-item" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% else %}
+          <li><a class="nav-item" href="{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+
+
+
+    </div>
+    <div class="row" style="padding-bottom: 20px">
+      <div class="col-xs-4 col-md-4">
+        <!-- vcard -->
+        <div class="vcard">
+          <div class="fn org">Security Consult, Inc.</div>
+          <div class="adr">
+            <div class="street-address">P.O. Box 12611</div>
+            <div> <span class="locality">Charlotte</span>, <abbr class="region" title="North Carolina">NC</abbr> <span class="postal-code">28220</span></div>
+            <div class="country-name">USA</div>
+          </div>
+          <div>Phone: <span class="tel">+1-704-531-8399</span></div>
+          <div>Email: <span class="email">info@securityconsult411.com</span></div>
+        </div>
+        <!-- /vcard -->
+      </div>
+
+    <div class="col-xs-8 col-md-8 pull-right">
+    <p> We provide service for non monitored / out of service burglar alarm systems and month to month monitoring</p>
+    <p> Please call us to discuss providing you with prompt, next-day install or service dispatches for a variety systems.</p>
+    </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="{{"/assets/js/bootstrap-transition.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-alert.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-modal.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-dropdown.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-scrollspy.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-tab.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-tooltip.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-popover.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-button.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-collapse.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-carousel.js" | prepend: site.baseurl }}"></script>
+<script src="{{"/assets/js/bootstrap-typeahead.js" | prepend: site.baseurl }}"></script>

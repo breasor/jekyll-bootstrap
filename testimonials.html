@@ -1,0 +1,53 @@
+---
+layout: default
+title: Testimonials
+permalink: testimonials/index.html
+---
+
+
+
+<div class="container">
+
+
+  <div style="padding-bottom: 30px">
+  <script type="text/javascript">    if (window.jQuery) {window.jQuery_1and1 = window.jQuery;}</script>
+    <img src="//www.demandforced3.com/b/css/1.0/images/bttn_reviews468.png" style="cursor: pointer;" name="reviews_tile" id="reviews_tile_l"
+    onclick="javascript:window.open('//www.demandforced3.com/b/etile_reviews_popup.jsp?d3cp_exid=securityconsultinc&amp;d3cp_source=My%20Website','newwindow',
+    'width=790px, top=0, left=0, toolbar=no, menubar=no, scrollbars=1, resizable=1, location=no, status=0');" alt=""/>
+    <script type="text/javascript">    if (window.jQuery_1and1) {window.jQuery = window.jQuery_1and1;}</script>
+  </div>
+
+  {% for post in site.posts %}
+  {% if post.category == "testimonials" %}
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3><a href="{{ post.url }}">{{ post.description }} </a> </h3>
+      <h4>{{ post.title }} in {{ post.location }}</h4>
+      <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %d, %Y" }}</time></span>
+    </div> <!-- /.panel-heading -->
+
+    <div class="panel-body">
+      Quality: {{ post.quality }}<br/>
+      Customer Service: {{ post.customerservice }}<br/>
+      Value for Money: {{ post.value }}<br/>
+
+      {% assign overall = post.quality | plus: post.customerservice | plus: post.value) | divided_by: 3 %}
+      {% capture overall %}{{ overall }}{% endcapture %}
+      Overall: {{  overall }}
+
+      <div style="padding-bottom: 15px"></div>
+
+      <blockquote>
+        {{ post.content }}
+      </blockquote>
+
+    </div> <!-- /.panel-body -->
+  </div> <!-- /.panel -->
+
+  <div style="padding-bottom: 15px"></div>
+
+    {% endif %}
+    {% endfor %}
+
+</div> <!-- /.container testimonial -->

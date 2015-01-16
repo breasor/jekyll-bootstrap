@@ -1,6 +1,23 @@
----
-theme :
-  name : bootstrap-3
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+ {% include head.html %}
+
+<body>
+
+
+{% include header.html %}
+
+<div style="padding-top: 80px"></div>
+
+    <div class="container-fluid container-content">
+
+      <!-- <div class="container container-content"> -->
+					{{ content }}
+      <!-- </div> -->
+
+          {% include footer.html %}
+
+     </div>
+  </body>
+</html>

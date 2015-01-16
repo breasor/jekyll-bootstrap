@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+<h3>{{ page.description }} </h3>
+<h4>{{ page.title }} in {{ page.location }}</h4>
+<span class="entry-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time></span>
+
+<div style="padding-bottom: 15px"></div>
+
+<ul class="list-unstyled">
+  <li>Quality: {{ page.quality }} </li>
+<li>Customer Service: {{ page.customerservice }} </li>
+<li>Value for Money: {{ page.value }} </li>
+<li></li>
+<li>Overall: {{ page.quality | plus: page.customerservice | plus: page.value) | divided_by: 3  | round: 2 }} </li>
+</ul>
+
+
+<blockquote>
+  {{ page.content }}
+</blockquote>

@@ -1,0 +1,183 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+/* LAYOUT CSS */
+
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+img.hafooter {
+  width: 120px;
+  height: 120px;
+
+}
+.caption {
+  display: block;
+}
+#layout {
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+
+.bordered {
+  padding-left: 20px;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* <hr> between each */
+}
+.featurette {
+  padding-top: 120px;
+  overflow: hidden; /* Clear floats */
+}
+.featurette-image {
+  margin-top: −120px; /* Vertically center image with the text */
+}
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+#sitefooter ul {
+  list-style: none;
+  padding: 0;
+}
+#sitefooter li:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 10px;
+  content: "\e080";
+}
+.hafooter
+{
+  font-size:  $base-font-size/1.5;
+  text-align: center;
+  align: bottom;
+}
+.logo
+{
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+}
+.fn {
+  font-weight: 700;
+}
+//body { padding-top: 50px; }
+
+body {
+  //background: url('/images/green_suburb.jpg') no-repeat center center fixed;
+  background: url('/images/images.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
+  background-color:#333;
+  font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+.panel-body {
+  background-color: #333;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 640px;
+  background-color:#555;
+}
+
+.container-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+/* responsive videos */
+.video figure { position: relative; nowhitespace: afterproperty; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+
+.video iframe, .video object, .video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+blockquote.bordered { padding: 3px; border-left: 3px $blue-color solid; }
+
+
+
+.slide {
+  width: 100%;
+  height: 300px;
+  //background-image:url('http://placehold.it/992x200');
+  //background-image:url('/images/slide.jpg');
+  background-size: cover;
+}
+.container-content {
+  padding-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.site-footer {
+  background: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+/* hover drop downs */
+@media only screen and (min-width : 768px) {
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
