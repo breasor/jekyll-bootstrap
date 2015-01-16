@@ -14,8 +14,8 @@ paginate:         5
 # Setup
 title:            'Security Consult'
 tagline:          Your insider in the Security Business Providing Professional Solutions and True Protection'
-url: http://localhost:4000
-#url: http://breasor.github.io
+#url: http://localhost:4000
+url: http://breasor.github.io/sc411
 
 baseurl:
 
